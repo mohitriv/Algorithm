@@ -13,8 +13,6 @@ public class TreeNode {
 }
 
 class Solution {
-    var minDiff = Int(MAX_INPUT)
-    var previousVal: Int?
     func postOrderTraversal(_ root: TreeNode?) {
         if root == nil { return }
         postOrderTraversal(root?.left)
